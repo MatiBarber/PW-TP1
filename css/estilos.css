@@ -1,0 +1,312 @@
+/* ================================
+   Estilos Generales
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================================
+   Header
+================================ */
+.header {
+    background-color: #004080; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-info h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header-info h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block;
+    border: 3px solid #fff;
+}
+
+/* ================================
+   Navegación
+================================ */
+.nav {
+    margin-top: 10px;
+}
+
+.btn-nav {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    color: #004080;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #004080;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-nav.activo {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* ================================
+   Contenido Principal
+================================ */
+.contenido {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.descripcion p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.intereses h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.intereses ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.intereses li {
+    margin-bottom: 10px;
+}
+
+/* ================================
+   Sección "Sobre mí" y Contacto
+================================ */
+.sobre-mi h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.sobre-mi p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.contacto h3 {
+    margin-bottom: 15px;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.btn-enviar {
+    background-color: #004080;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #00264d;
+}
+
+/* ================================
+   Footer
+================================ */
+.footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+@media (max-width: 768px) {
+    .header-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-info h2 {
+        font-size: 1rem;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .btn-nav {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .contenido {
+        padding: 0 10px;
+    }
+
+    .intereses ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-nav {
+        width: 80%;
+        text-align: center;
+    }
+}
+/* Animación suave para cambios de modo */
+body,
+.header,
+.footer,
+.nav .btn-nav,
+.campo input,
+.campo textarea {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Botón Modo Oscuro */
+.btn-darkmode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-darkmode:hover {
+    background-color: #555;
+}
+
+/* Estilos del Modo Oscuro */
+.modo-oscuro {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+/* Header con azul más oscuro */
+.modo-oscuro .header {
+    background-color: #00264d;
+}
+
+/* Navegación */
+.modo-oscuro .nav .btn-nav {
+    background-color: #666; /* Gris oscuro para inactivos */
+    color: #fff; /* Texto blanco */
+    border: none;
+}
+
+.modo-oscuro .nav .btn-nav:hover {
+    background-color: #444;
+}
+
+/* Botón activo con amarillo intenso */
+.modo-oscuro .btn-nav.activo {
+    background-color: #ffb300; /* Amarillo intenso */
+    color: #fff;
+}
+
+/* Footer */
+.modo-oscuro .footer {
+    background-color: #00264d;
+    color: #ccc;
+}
+
+/* Campos del formulario */
+.modo-oscuro .campo input,
+.modo-oscuro .campo textarea {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Botón Enviar */
+.modo-oscuro .btn-enviar {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+.modo-oscuro .btn-enviar:hover {
+    background-color: #666;
+}

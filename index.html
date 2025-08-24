@@ -1,62 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <title>Barbieri Matías</title>
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>
-                    Matias Barbieri
-                </h1>
-                <h2>
-                    Ingeniero en Sistemas de Información
-                </h2>
-            </div>
-            <img src="img/Foto de perfil.jpg" alt="Perfil">
-            <button>
-                <a href="index.html">Inicio</a>
-            </button>
-            <button>
-                <a href="contacto.html">Ver mas sobre mi</a>
-            </button>
-        </header>
-        <section>
-            <div>
-                <p>
-                    Hola, soy Matías, soy de San Francisco, y soy estudiante de Ing. en Sistemas de Información. Actualmente me encuentro cursando 4to año, y a la par formo parte del equipo de basquet. <br>
-                    Entre mis pasatiempos puedo mencionar la práctica de basquet, jugar al futbol, al ajederez; resolver sudokus, crucigramas; realizar cursos por internet, entre otras cosas.
-                </p>
-            </div>
-            <div>
-                <h3>Entre mis intereses puedo mencionar: </h3>
-                <ul>
-                    <li>
-                        <p>
-                            Desarrollo de software: esto debido a que me gusta la programacion, y quiero desenvolverme en este rubro.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Project Manager: mas alla del interes del desarrollo, me interesa tambien liderar equipos para realizar proyectos innovadores.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Lider Coach: para tambien desarrollar la habilidad de ayudar a quienes son parte de mi equipo a aprender de las herramientas y metodoologías aplicados en el proyecto.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Perfil - Matías Barbieri</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-info">
+            <h1 class="nombre">Matías Barbieri</h1>
+            <h2 class="titulo">Ingeniero en Sistemas de Información</h2>
+        </div>
+        <img src="img/Foto de perfil.jpg" alt="Foto de Perfil" class="avatar">
+        <nav class="nav">
+            <a href="index.html" class="btn-nav activo">Inicio</a>
+            <a href="contacto.html" class="btn-nav">Ver más sobre mí</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="descripcion">
+            <p>
+                Hola, soy Matías, soy de San Francisco, y soy estudiante de Ingeniería en Sistemas de Información. Actualmente curso 4° año y formo parte del equipo de básquet.<br>
+                Entre mis pasatiempos: practicar básquet, jugar al fútbol y al ajedrez; resolver sudokus y crucigramas; realizar cursos online, entre otros.
+            </p>
         </section>
-        <footer>
-            <p>Presentación realizada el 4/8/2025 para la materia "Programación Web".</p>
-        </footer>
-    </body>
+
+        <section class="intereses">
+            <h3>Entre mis intereses puedo mencionar:</h3>
+            <ul>
+                <li>Desarrollo de software: me gusta la programación y quiero desenvolverme en este rubro.</li>
+                <li>Project Manager: me interesa liderar equipos y realizar proyectos innovadores.</li>
+                <li>Líder Coach: ayudar a los miembros del equipo a aprender herramientas y metodologías aplicadas en proyectos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Presentación realizada el 4/8/2025 para la materia "Programación Web".</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

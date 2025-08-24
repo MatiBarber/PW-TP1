@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <title>Barbieri Matías</title>
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>
-                    Matias Barbieri
-                </h1>
-                <h2>
-                    Ingeniero en Sistemas de Información
-                </h2>
-            </div>
-            <img src="img/Foto de perfil.jpg" alt="Perfil">
-            <button>
-                <a href="index.html">Inicio</a>
-            </button>
-            <button>
-                <a href="contacto.html">Mas sobre mi</a>
-            </button>
-        </header>
-        <section>
-            <h2>
-                Mas sobre mi
-            </h2>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Contacto - Matías Barbieri</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-info">
+            <h1 class="nombre">Matías Barbieri</h1>
+            <h2 class="titulo">Ingeniero en Sistemas de Información</h2>
+        </div>
+        <img src="img/Foto de perfil.jpg" alt="Foto de perfil" class="avatar">
+        <nav class="nav">
+            <a href="index.html" class="btn-nav">Inicio</a>
+            <a href="contacto.html" class="btn-nav activo">Ver más sobre mí</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="sobre-mi">
+            <h2>Más sobre mí</h2>
             <h3>Objetivos</h3>
             <p>
-                Entre mis objetivos o aspiraciones se encuentran la idea de crecer como profesional, adquiriendo aprendizajes y pudiendo ser capaz de desempeñar varios roles. Tambien tener la posibilidad de emprender en proyectos personales, y poder trabajar de manera independiente, ya en una etapa de lider de proyectos.
+                Mis objetivos incluyen crecer como profesional, adquiriendo aprendizajes y desempeñando varios roles. También emprender proyectos personales y trabajar de manera independiente, llegando a liderar proyectos en el futuro.
             </p>
+        </section>
+
+        <section class="contacto">
             <h3>Dejame tu mensaje y nos pondremos en contacto</h3>
-            <form method="post" action="https://formspree.io/f/xpwjapry">
-                <label for="nombre" class="label1">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingrese su nombre" class="itemForm1">
-
-                <label for="comentario" class="label4">Comentario:</label>
-                <textarea name="comentario" id="comentario" placeholder="Escriba un comentario" class="itemForm4"></textarea>
-
-                <input type="submit" value="Enviar" class="Enviar">
+            <form method="post" action="https://formspree.io/f/xpwjapry" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="campo">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" placeholder="Escriba un comentario"></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="btn-enviar">
             </form>
         </section>
-        <footer>
-            <p>Presentación realizada el 4/8/2025 para la materia "Programación Web".</p>
-        </footer>
-    </body>
+    </main>
+
+    <footer class="footer">
+        <p>Presentación realizada el 4/8/2025 para la materia "Programación Web".</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
